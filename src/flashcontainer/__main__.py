@@ -31,7 +31,7 @@
 
 import sys
 
-from .pargen import pargen_cli
+from flashcontainer.pargen import pargen_cli
 
 
 def main():
