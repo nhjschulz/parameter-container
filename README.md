@@ -359,6 +359,14 @@ written to stdout id no output file option is given. This allows to "pipe" the d
       --output filename, -o filename
                             file name of generated Pargen xml file (default: <stdout>)
 
+## PyInstaller
+
+Using the PyInstaller package, it is possible to pack `flashcontainer` into an executable tha includes all its dependencies. This makes the tool portable (between Windows machines), and removes the requirement of having Python and the dependencies installed in every machine.
+
+To create the executable, PyInstaller must be installed via pip: `pip install pyinstaller`
+Then, you can call the generation script: `.\tools\create_executable.bat`
+The resulting executable will be found in `.\dist\pargen.exe`
+
 ## Issues, Ideas And Bugs
 
 If you have further ideas or you found some bugs, great! Create an
